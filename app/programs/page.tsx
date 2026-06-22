@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProgramsPage() {
   return (
-    <main className="min-h-screen bg-gray-50 py-20 selection:bg-orange-200">
+    <main className="min-h-screen bg-gray-50 py-40 selection:bg-orange-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 mb-16 items-end">
           <div>
