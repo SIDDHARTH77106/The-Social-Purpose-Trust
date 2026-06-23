@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* 1 Million Solar */}
-            <div className="bg-orange-50 rounded-3xl p-8 md:p-12 border border-orange-100 shadow-sm flex flex-col">
+            <div className="bg-orange-50 rounded-3xl p-8 md:p-12 border border-orange-100 shadow-sm flex flex-col hover:shadow-md transition-shadow">
               <span className="bg-orange-500 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6 w-max">Renewable Energy</span>
               <h3 className="text-3xl font-serif text-gray-900 mb-4">1 Million Solar Initiative</h3>
               <h4 className="text-xl font-bold text-gray-800 mb-4">Transforming Rural India With Solar Energy To Combat Climate Change.</h4>
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
 
             {/* OffseTree */}
-            <div className="bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100 shadow-sm flex flex-col">
+            <div className="bg-green-50 rounded-3xl p-8 md:p-12 border border-green-100 shadow-sm flex flex-col hover:shadow-md transition-shadow">
               <span className="bg-green-700 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6 w-max">Climate Action</span>
               <h3 className="text-3xl font-serif text-gray-900 mb-4">OffseTree Program</h3>
               <p className="text-gray-700 mb-8 leading-relaxed">
@@ -75,6 +75,15 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* DEDICATED BUTTON TO GO TO MAIN PROGRAMS PAGE */}
+          <div className="mt-16 text-center">
+            <Link href="/programs" className="inline-flex items-center justify-center gap-3 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:-translate-y-1 hover:shadow-xl group">
+              Explore All Detailed Programs 
+              <span aria-hidden="true" className="group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
+          </div>
+
         </div>
       </section>
 
@@ -84,7 +93,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-green-400 mb-2 block">Learn & Grow</span>
-              <h2 className="text-3xl sm:text-4xl font-serif mb-4">Not only learn !! also GET CERTIFIED WITH TSP's program</h2>
+              <h2 className="text-3xl sm:text-4xl font-serif mb-4">Not only learn !! also GET CERTIFIED WITH TSP&apos;s program</h2>
               <p className="text-gray-300 mb-6 leading-relaxed">
                 Our courses, quizzes, and certifications are part of a broader social purpose to build a knowledgeable, skilled, and enriched community. 
               </p>
@@ -145,7 +154,7 @@ export default function Home() {
       <section className="py-20 bg-orange-50 border-t border-orange-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-serif text-gray-900 mb-6">You give but little when you give of your possessions.</h2>
-          <p className="text-lg text-gray-600 mb-10 italic">"It is when you give of yourself that you truly give."</p>
+          <p className="text-lg text-gray-600 mb-10 italic">&quot;It is when you give of yourself that you truly give.&quot;</p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/get-involved" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-md font-bold text-lg shadow-md transition flex items-center justify-center">

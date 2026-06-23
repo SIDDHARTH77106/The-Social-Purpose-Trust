@@ -12,16 +12,17 @@ export default function Footer() {
           {/* Column 1: Brand (Takes up more space) */}
           <div className="lg:col-span-4">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shadow-inner">🌳</div>
+              <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-xl shadow-inner hover:bg-white/20 transition-colors duration-300">🌳</div>
               <div>
                 <h2 className="text-lg font-black leading-tight tracking-wide">THE SOCIAL PURPOSE TRUST</h2>
                 <p className="text-[10px] text-orange-400 font-bold uppercase tracking-widest">Making India Carbon Smart</p>
               </div>
             </div>
+            {/* ERROR FIXED: India's is now India&apos;s */}
             <p className="text-sm text-green-100/70 mb-8 leading-relaxed pr-4">
-              Empowering women and underserved youth to lead India's clean energy transition through green skills, livelihoods, and community action.
+              Empowering women and underserved youth to lead India&apos;s clean energy transition through green skills, livelihoods, and community action.
             </p>
-            <div className="flex flex-wrap gap-2 text-[10px] font-bold text-orange-400 bg-white/5 p-3 rounded-lg w-max border border-white/10">
+            <div className="flex flex-wrap gap-2 text-[10px] font-bold text-orange-400 bg-white/5 p-3 rounded-lg w-max border border-white/10 hover:border-white/30 transition-all cursor-default">
               <span>12A</span> <span className="text-white/30">•</span> 
               <span>80G</span> <span className="text-white/30">•</span> 
               <span>CSR-1</span> <span className="text-white/30">•</span> 
@@ -33,10 +34,18 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-orange-500 mb-6">Programs</h4>
             <ul className="space-y-4">
-              <li><Link href="/programs/carbon-smart-schools" className="text-sm text-green-100/80 hover:text-white transition">Carbon Smart Schools</Link></li>
-              <li><Link href="/programs/carbon-smart-livelihoods" className="text-sm text-green-100/80 hover:text-white transition">Carbon Smart Livelihoods</Link></li>
-              <li><Link href="/programs/carbon-smart-green-livelihood-fellowship" className="text-sm text-green-100/80 hover:text-white transition leading-snug block">Carbon Smart Green Livelihood Fellowship</Link></li>
-              <li><Link href="/register" className="text-sm font-bold text-orange-400 hover:text-orange-300 transition">CSGLF — Apply Now →</Link></li>
+              <li className="group">
+                <Link href="/programs/carbon-smart-schools" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">Carbon Smart Schools</Link>
+              </li>
+              <li className="group">
+                <Link href="/programs/carbon-smart-livelihoods" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">Carbon Smart Livelihoods</Link>
+              </li>
+              <li className="group">
+                <Link href="/programs/carbon-smart-green-livelihood-fellowship" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 leading-snug inline-block">Carbon Smart Green Livelihood Fellowship</Link>
+              </li>
+              <li className="group pt-2">
+                <Link href="/register" className="text-sm font-bold text-orange-400 group-hover:text-orange-300 group-hover:translate-x-1 transition-all duration-300 inline-flex items-center gap-1">CSGLF — Apply Now <span>→</span></Link>
+              </li>
             </ul>
           </div>
 
@@ -44,11 +53,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-orange-500 mb-6">Organisation</h4>
             <ul className="space-y-4">
-              <li><Link href="/about" className="text-sm text-green-100/80 hover:text-white transition">About Us</Link></li>
-              <li><Link href="/about#theory" className="text-sm text-green-100/80 hover:text-white transition">Theory of Change</Link></li>
-              <li><Link href="/impact" className="text-sm text-green-100/80 hover:text-white transition">Impact & Evidence</Link></li>
-              <li><Link href="/about#team" className="text-sm text-green-100/80 hover:text-white transition">Our Team</Link></li>
-              <li className="text-sm text-green-100/40 italic">Annual Reports</li>
+              <li className="group"><Link href="/about" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">About Us</Link></li>
+              <li className="group"><Link href="/about#theory" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">Theory of Change</Link></li>
+              <li className="group"><Link href="/impact" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">Impact & Evidence</Link></li>
+              <li className="group"><Link href="/about#team" className="text-sm text-green-100/80 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 inline-block">Our Team</Link></li>
+              <li><span className="text-sm text-green-100/40 italic cursor-not-allowed">Annual Reports</span></li>
             </ul>
           </div>
 
@@ -56,15 +65,15 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-orange-500 mb-6">Support & Contact</h4>
             <ul className="space-y-4 mb-8">
-              <li><Link href="/donate" className="text-sm font-bold text-white hover:text-orange-400 transition">Donate (80G)</Link></li>
-              <li><Link href="/get-involved" className="text-sm text-green-100/80 hover:text-white transition">CSR Partnership</Link></li>
-              <li><Link href="/register" className="text-sm text-green-100/80 hover:text-white transition">Volunteer</Link></li>
-              <li><Link href="/contact" className="text-sm text-green-100/80 hover:text-white transition">Contact</Link></li>
+              <li className="group"><Link href="/get-involved" className="text-sm font-bold text-white group-hover:text-orange-400 transition-colors duration-300">Donate (80G)</Link></li>
+              <li className="group"><Link href="/get-involved" className="text-sm text-green-100/80 group-hover:text-white transition-colors duration-300">CSR Partnership</Link></li>
+              <li className="group"><Link href="/register" className="text-sm text-green-100/80 group-hover:text-white transition-colors duration-300">Volunteer</Link></li>
+              <li className="group"><Link href="/get-involved" className="text-sm text-green-100/80 group-hover:text-white transition-colors duration-300">Contact</Link></li>
             </ul>
             <div className="space-y-2 pt-4 border-t border-white/10">
-              <a href="mailto:info@socialpurpose.org" className="block text-sm text-green-100/80 hover:text-white transition">info@socialpurpose.org</a>
-              <a href="tel:+918587999521" className="block text-sm text-green-100/80 hover:text-white transition">+91 858 7999 521</a>
-              <p className="text-sm text-green-100/80">Ghaziabad, Uttar Pradesh, India</p>
+              <a href="mailto:info@socialpurpose.org" className="block text-sm text-green-100/80 hover:text-white transition-colors duration-300">info@socialpurpose.org</a>
+              <a href="tel:+918587999521" className="block text-sm text-green-100/80 hover:text-white transition-colors duration-300">+91 858 7999 521</a>
+              <p className="text-sm text-green-100/80 mt-2">Ghaziabad, Uttar Pradesh, India</p>
             </div>
           </div>
 
